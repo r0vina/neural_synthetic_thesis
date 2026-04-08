@@ -4,8 +4,8 @@
 |---|---|
 | `background_principled.py` | Inverse rendering with a disney principled BSDF for the background, participating media for glass along with dielectric. |
 | `bowl_advanced.py` | Diffuse BSDF for background, participating media and dielectric for glass. |
-| `colmap_pipeline.sh` | Runs the COLMAP reconstruction pipeline, including feature extraction, matching, sparse reconstruction, and dense reconstruction. |
-| `extract_frames.sh` | Extracts image frames from captured videos using FFmpeg for use in COLMAP and downstream processing. |
+| `camera_converter.py` |Conversion from Colmap models exported as text files, to a mitsuba-compatible camera definition. |
+| `convert_to_neus.py` | Extracts image frames from captured videos using FFmpeg for use in COLMAP and downstream processing. |
 | `align_pointclouds.py` | Applies rigid transformations between separate capture passes based on ICP or manually derived alignment parameters. |
 | `build_mitsuba_scene.py` | Assembles Mitsuba scene dictionaries or XML scene descriptions from reconstructed geometry, materials, lighting, and camera parameters. |
 | `optimize_envmap.py` | Runs inverse rendering to estimate an environment map from light-probe observations. |
