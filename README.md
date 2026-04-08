@@ -12,8 +12,3 @@
 | `lamp_envmap_pose.py` |Pose optimization for a reflective sphere, for the uncontrolled scene. |
 | `lamp_envmap_inverse.py` | Inverse rendering environment map for the uncontrolled scene. |
 | `lamp_texture_inverse.py` | Initial attempt at learning UV unwrapped texture, with a non-ideal scene. |
-| `convert_to_nerfstudio.py` | Converts image sets and COLMAP outputs into Nerfstudio-compatible dataset format. |
-| `run_patchcore.py` | Runs the anomaly detection pipeline using DINO features and PatchCore / AnomalyDINO. |
-| `render_synthetic_views.py` | Renders synthetic views from the reconstructed Mitsuba scene for qualitative comparison or anomaly detection experiments. |
-| `requirements.txt` | Python dependencies required for the scripts in this repository. |
-| `Dockerfile` | Container setup used to ensure compatibility for parts of the pipeline with strict CUDA or library requirements. |
