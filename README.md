@@ -6,12 +6,12 @@
 | `bowl_advanced.py` | Diffuse BSDF for background, participating media and dielectric for glass. |
 | `camera_converter.py` |Conversion from Colmap models exported as text files, to a mitsuba-compatible camera definition. |
 | `convert_to_neus.py` | Conversion of Colmap cameras to the IDR-style format required by NeuS and AlphaNeuS |
-| `exposure_inv.py` | Applies rigid transformations between separate capture passes based on ICP or manually derived alignment parameters. |
-| `build_mitsuba_scene.py` | Assembles Mitsuba scene dictionaries or XML scene descriptions from reconstructed geometry, materials, lighting, and camera parameters. |
-| `optimize_envmap.py` | Runs inverse rendering to estimate an environment map from light-probe observations. |
-| `optimize_materials.py` | Optimizes material parameters in Mitsuba against reference photographs using differentiable rendering. |
-| `learn_table_texture.py` | Learns or optimizes a UV texture for the table/background surface from reference images. |
-| `run_neusfacto.py` | Launches NeuSFacto / Nerfstudio experiments for geometry reconstruction of coated objects. |
+| `exposure_inv.py` | Inverse rendering of the environment map, using L1 loss for each level of exposure (did not succeed). |
+| `hdr_merge.py` | Attempted merging of the stepped captured RAW images into a single HDR. |
+| `jerf_probe_pose_inverse.py` | Pose optimization for a reflective sphere to match the photos of the light probe from the ECO3D dataset |
+| `lamp_envmap_pose.py` |Pose optimization for a reflective sphere, for the uncontrolled scene. |
+| `lamp_envmap_inverse.py` | Inverse rendering environment map for the uncontrolled scene. |
+| `lamp_texture_inverse.py` | Initial attempt at learning UV unwrapped texture, with a non-ideal scene. |
 | `convert_to_nerfstudio.py` | Converts image sets and COLMAP outputs into Nerfstudio-compatible dataset format. |
 | `run_patchcore.py` | Runs the anomaly detection pipeline using DINO features and PatchCore / AnomalyDINO. |
 | `render_synthetic_views.py` | Renders synthetic views from the reconstructed Mitsuba scene for qualitative comparison or anomaly detection experiments. |
